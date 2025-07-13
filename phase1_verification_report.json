@@ -1,0 +1,904 @@
+{
+  "summary": {
+    "total_tests": 81,
+    "passed_tests": 71,
+    "failed_tests": 10,
+    "success_rate": 0.8765432098765432,
+    "execution_time": 0.05333137512207031
+  },
+  "coverage_metrics": {
+    "pattern_coverage": 1.0,
+    "transformation_coverage": 1.0,
+    "scheme_coverage": 1.0,
+    "hypergraph_coverage": 0.6666666666666666,
+    "tensor_coverage": 0.5,
+    "custom_coverage": 1.0,
+    "fragment_coverage": 1.0
+  },
+  "test_results": [
+    {
+      "test_name": "pattern_preservation_identity_transform",
+      "passed": true,
+      "execution_time": 0.0003020763397216797,
+      "details": {
+        "node_count_preserved": true,
+        "tensor_shape_consistent": true,
+        "semantic_content_preserved": true,
+        "max_tensor_norm": true,
+        "energy_conservation": true
+      }
+    },
+    {
+      "test_name": "transformation_invertibility_identity_transform",
+      "passed": true,
+      "execution_time": 0.04765963554382324,
+      "details": {
+        "reconstruction_error": 0.0,
+        "inverse_computed": true
+      }
+    },
+    {
+      "test_name": "scheme_tensor_roundtrip_default_test_0",
+      "passed": true,
+      "execution_time": 0.000614166259765625,
+      "details": {
+        "bidirectional_consistency": true,
+        "original_atom_type": "action",
+        "reconstructed_atom_type": "action",
+        "original_arg_count": 3,
+        "reconstructed_arg_count": 3,
+        "tensor_nodes_created": 4,
+        "structural_match": true
+      }
+    },
+    {
+      "test_name": "scheme_tensor_roundtrip_default_test_1",
+      "passed": true,
+      "execution_time": 0.00026798248291015625,
+      "details": {
+        "bidirectional_consistency": true,
+        "original_atom_type": "cognitive-state",
+        "reconstructed_atom_type": "cognitive-state",
+        "original_arg_count": 2,
+        "reconstructed_arg_count": 2,
+        "tensor_nodes_created": 3,
+        "structural_match": true
+      }
+    },
+    {
+      "test_name": "scheme_tensor_roundtrip_default_test_2",
+      "passed": true,
+      "execution_time": 0.0003445148468017578,
+      "details": {
+        "bidirectional_consistency": true,
+        "original_atom_type": "relation",
+        "reconstructed_atom_type": "relation",
+        "original_arg_count": 3,
+        "reconstructed_arg_count": 3,
+        "tensor_nodes_created": 4,
+        "structural_match": true
+      }
+    },
+    {
+      "test_name": "scheme_tensor_roundtrip_default_test_3",
+      "passed": true,
+      "execution_time": 0.0003571510314941406,
+      "details": {
+        "bidirectional_consistency": true,
+        "original_atom_type": "compound",
+        "reconstructed_atom_type": "compound",
+        "original_arg_count": 3,
+        "reconstructed_arg_count": 3,
+        "tensor_nodes_created": 4,
+        "structural_match": true
+      }
+    },
+    {
+      "test_name": "scheme_tensor_roundtrip_verification_test",
+      "passed": true,
+      "execution_time": 0.0003483295440673828,
+      "details": {
+        "bidirectional_consistency": true,
+        "original_atom_type": "goal",
+        "reconstructed_atom_type": "goal",
+        "original_arg_count": 3,
+        "reconstructed_arg_count": 3,
+        "tensor_nodes_created": 4,
+        "structural_match": true
+      }
+    },
+    {
+      "test_name": "scheme_tensor_roundtrip_verification_test",
+      "passed": true,
+      "execution_time": 0.000331878662109375,
+      "details": {
+        "bidirectional_consistency": true,
+        "original_atom_type": "emotion",
+        "reconstructed_atom_type": "emotion",
+        "original_arg_count": 3,
+        "reconstructed_arg_count": 3,
+        "tensor_nodes_created": 4,
+        "structural_match": true
+      }
+    },
+    {
+      "test_name": "scheme_tensor_roundtrip_verification_test",
+      "passed": true,
+      "execution_time": 0.000415802001953125,
+      "details": {
+        "bidirectional_consistency": true,
+        "original_atom_type": "decision",
+        "reconstructed_atom_type": "decision",
+        "original_arg_count": 3,
+        "reconstructed_arg_count": 3,
+        "tensor_nodes_created": 4,
+        "structural_match": true
+      }
+    },
+    {
+      "test_name": "hypergraph_integrity",
+      "passed": false,
+      "execution_time": 0.0001652240753173828,
+      "details": {
+        "unique_node_ids": true,
+        "valid_link_references": false,
+        "adjacency_matrix_size_correct": true,
+        "tensor_states_valid": true,
+        "semantic_content_consistent": true
+      }
+    },
+    {
+      "test_name": "tensor_hypergraph_correspondence",
+      "passed": true,
+      "execution_time": 6.67572021484375e-06,
+      "details": {
+        "node_tensor_count_match": true,
+        "signature_shape_match": true,
+        "matrix_link_consistency": true
+      }
+    },
+    {
+      "test_name": "custom_rule_node_connectivity",
+      "passed": true,
+      "execution_time": 4.0531158447265625e-06,
+      "details": {
+        "average_connectivity": 1.0,
+        "total_links": 1,
+        "total_nodes": 1
+      }
+    },
+    {
+      "test_name": "custom_rule_numerical_stability",
+      "passed": true,
+      "execution_time": 5.4836273193359375e-05,
+      "details": {
+        "reason": "numerically_stable"
+      }
+    },
+    {
+      "test_name": "custom_rule_cognitive_coherence",
+      "passed": true,
+      "execution_time": 4.0531158447265625e-06,
+      "details": {
+        "total_nodes": 1,
+        "nodes_with_semantics": 1,
+        "coherence_ratio": 1.0
+      }
+    },
+    {
+      "test_name": "custom_rule_energy_conservation",
+      "passed": true,
+      "execution_time": 5.459785461425781e-05,
+      "details": {
+        "total_energy": 0.0,
+        "energy_per_node": [
+          0.0
+        ],
+        "finite_energy": true
+      }
+    },
+    {
+      "test_name": "hypergraph_integrity",
+      "passed": false,
+      "execution_time": 7.128715515136719e-05,
+      "details": {
+        "unique_node_ids": true,
+        "valid_link_references": false,
+        "adjacency_matrix_size_correct": true,
+        "tensor_states_valid": true,
+        "semantic_content_consistent": true
+      }
+    },
+    {
+      "test_name": "tensor_hypergraph_correspondence",
+      "passed": true,
+      "execution_time": 5.245208740234375e-06,
+      "details": {
+        "node_tensor_count_match": true,
+        "signature_shape_match": true,
+        "matrix_link_consistency": true
+      }
+    },
+    {
+      "test_name": "custom_rule_node_connectivity",
+      "passed": true,
+      "execution_time": 3.0994415283203125e-06,
+      "details": {
+        "average_connectivity": 1.0,
+        "total_links": 1,
+        "total_nodes": 1
+      }
+    },
+    {
+      "test_name": "custom_rule_numerical_stability",
+      "passed": true,
+      "execution_time": 5.841255187988281e-05,
+      "details": {
+        "reason": "numerically_stable"
+      }
+    },
+    {
+      "test_name": "custom_rule_cognitive_coherence",
+      "passed": true,
+      "execution_time": 2.86102294921875e-06,
+      "details": {
+        "total_nodes": 1,
+        "nodes_with_semantics": 1,
+        "coherence_ratio": 1.0
+      }
+    },
+    {
+      "test_name": "custom_rule_energy_conservation",
+      "passed": true,
+      "execution_time": 2.193450927734375e-05,
+      "details": {
+        "total_energy": 0.0,
+        "energy_per_node": [
+          0.0
+        ],
+        "finite_energy": true
+      }
+    },
+    {
+      "test_name": "hypergraph_integrity",
+      "passed": true,
+      "execution_time": 5.9604644775390625e-05,
+      "details": {
+        "unique_node_ids": true,
+        "valid_link_references": true,
+        "adjacency_matrix_size_correct": true,
+        "tensor_states_valid": true,
+        "semantic_content_consistent": true
+      }
+    },
+    {
+      "test_name": "tensor_hypergraph_correspondence",
+      "passed": true,
+      "execution_time": 3.0994415283203125e-06,
+      "details": {
+        "node_tensor_count_match": true,
+        "signature_shape_match": true,
+        "matrix_link_consistency": true
+      }
+    },
+    {
+      "test_name": "custom_rule_node_connectivity",
+      "passed": true,
+      "execution_time": 2.1457672119140625e-06,
+      "details": {
+        "average_connectivity": 0.0,
+        "total_links": 0,
+        "total_nodes": 1
+      }
+    },
+    {
+      "test_name": "custom_rule_numerical_stability",
+      "passed": true,
+      "execution_time": 6.29425048828125e-05,
+      "details": {
+        "reason": "numerically_stable"
+      }
+    },
+    {
+      "test_name": "custom_rule_cognitive_coherence",
+      "passed": true,
+      "execution_time": 2.384185791015625e-06,
+      "details": {
+        "total_nodes": 1,
+        "nodes_with_semantics": 1,
+        "coherence_ratio": 1.0
+      }
+    },
+    {
+      "test_name": "custom_rule_energy_conservation",
+      "passed": true,
+      "execution_time": 2.0265579223632812e-05,
+      "details": {
+        "total_energy": 0.0,
+        "energy_per_node": [
+          0.0
+        ],
+        "finite_energy": true
+      }
+    },
+    {
+      "test_name": "hypergraph_integrity",
+      "passed": false,
+      "execution_time": 3.838539123535156e-05,
+      "details": {
+        "unique_node_ids": true,
+        "valid_link_references": false,
+        "adjacency_matrix_size_correct": true,
+        "tensor_states_valid": true,
+        "semantic_content_consistent": true
+      }
+    },
+    {
+      "test_name": "tensor_hypergraph_correspondence",
+      "passed": true,
+      "execution_time": 3.0994415283203125e-06,
+      "details": {
+        "node_tensor_count_match": true,
+        "signature_shape_match": true,
+        "matrix_link_consistency": true
+      }
+    },
+    {
+      "test_name": "custom_rule_node_connectivity",
+      "passed": true,
+      "execution_time": 1.9073486328125e-06,
+      "details": {
+        "average_connectivity": 1.0,
+        "total_links": 1,
+        "total_nodes": 1
+      }
+    },
+    {
+      "test_name": "custom_rule_numerical_stability",
+      "passed": true,
+      "execution_time": 4.124641418457031e-05,
+      "details": {
+        "reason": "numerically_stable"
+      }
+    },
+    {
+      "test_name": "custom_rule_cognitive_coherence",
+      "passed": true,
+      "execution_time": 1.6689300537109375e-06,
+      "details": {
+        "total_nodes": 1,
+        "nodes_with_semantics": 1,
+        "coherence_ratio": 1.0
+      }
+    },
+    {
+      "test_name": "custom_rule_energy_conservation",
+      "passed": true,
+      "execution_time": 1.7642974853515625e-05,
+      "details": {
+        "total_energy": 0.0,
+        "energy_per_node": [
+          0.0
+        ],
+        "finite_energy": true
+      }
+    },
+    {
+      "test_name": "hypergraph_integrity",
+      "passed": false,
+      "execution_time": 4.9591064453125e-05,
+      "details": {
+        "unique_node_ids": true,
+        "valid_link_references": false,
+        "adjacency_matrix_size_correct": true,
+        "tensor_states_valid": true,
+        "semantic_content_consistent": true
+      }
+    },
+    {
+      "test_name": "tensor_hypergraph_correspondence",
+      "passed": true,
+      "execution_time": 3.337860107421875e-06,
+      "details": {
+        "node_tensor_count_match": true,
+        "signature_shape_match": true,
+        "matrix_link_consistency": true
+      }
+    },
+    {
+      "test_name": "custom_rule_node_connectivity",
+      "passed": true,
+      "execution_time": 2.1457672119140625e-06,
+      "details": {
+        "average_connectivity": 1.0,
+        "total_links": 1,
+        "total_nodes": 1
+      }
+    },
+    {
+      "test_name": "custom_rule_numerical_stability",
+      "passed": true,
+      "execution_time": 8.487701416015625e-05,
+      "details": {
+        "reason": "numerically_stable"
+      }
+    },
+    {
+      "test_name": "custom_rule_cognitive_coherence",
+      "passed": true,
+      "execution_time": 2.384185791015625e-06,
+      "details": {
+        "total_nodes": 1,
+        "nodes_with_semantics": 1,
+        "coherence_ratio": 1.0
+      }
+    },
+    {
+      "test_name": "custom_rule_energy_conservation",
+      "passed": true,
+      "execution_time": 2.1219253540039062e-05,
+      "details": {
+        "total_energy": 0.0,
+        "energy_per_node": [
+          0.0
+        ],
+        "finite_energy": true
+      }
+    },
+    {
+      "test_name": "hypergraph_integrity",
+      "passed": true,
+      "execution_time": 5.841255187988281e-05,
+      "details": {
+        "unique_node_ids": true,
+        "valid_link_references": true,
+        "adjacency_matrix_size_correct": true,
+        "tensor_states_valid": true,
+        "semantic_content_consistent": true
+      }
+    },
+    {
+      "test_name": "tensor_hypergraph_correspondence",
+      "passed": true,
+      "execution_time": 2.86102294921875e-06,
+      "details": {
+        "node_tensor_count_match": true,
+        "signature_shape_match": true,
+        "matrix_link_consistency": true
+      }
+    },
+    {
+      "test_name": "custom_rule_node_connectivity",
+      "passed": true,
+      "execution_time": 1.9073486328125e-06,
+      "details": {
+        "average_connectivity": 0.0,
+        "total_links": 0,
+        "total_nodes": 1
+      }
+    },
+    {
+      "test_name": "custom_rule_numerical_stability",
+      "passed": true,
+      "execution_time": 6.699562072753906e-05,
+      "details": {
+        "reason": "numerically_stable"
+      }
+    },
+    {
+      "test_name": "custom_rule_cognitive_coherence",
+      "passed": true,
+      "execution_time": 1.6689300537109375e-06,
+      "details": {
+        "total_nodes": 1,
+        "nodes_with_semantics": 1,
+        "coherence_ratio": 1.0
+      }
+    },
+    {
+      "test_name": "custom_rule_energy_conservation",
+      "passed": true,
+      "execution_time": 1.9788742065429688e-05,
+      "details": {
+        "total_energy": 0.0,
+        "energy_per_node": [
+          0.0
+        ],
+        "finite_energy": true
+      }
+    },
+    {
+      "test_name": "hypergraph_integrity",
+      "passed": true,
+      "execution_time": 8.082389831542969e-05,
+      "details": {
+        "unique_node_ids": true,
+        "valid_link_references": true,
+        "adjacency_matrix_size_correct": true,
+        "tensor_states_valid": true,
+        "semantic_content_consistent": true
+      }
+    },
+    {
+      "test_name": "tensor_hypergraph_correspondence",
+      "passed": false,
+      "execution_time": 2.86102294921875e-05,
+      "details": {
+        "node_tensor_count_match": true,
+        "signature_shape_match": true,
+        "matrix_link_consistency": false
+      }
+    },
+    {
+      "test_name": "custom_rule_node_connectivity",
+      "passed": true,
+      "execution_time": 2.384185791015625e-06,
+      "details": {
+        "average_connectivity": 0.8,
+        "total_links": 4,
+        "total_nodes": 5
+      }
+    },
+    {
+      "test_name": "custom_rule_numerical_stability",
+      "passed": true,
+      "execution_time": 0.00011324882507324219,
+      "details": {
+        "reason": "numerically_stable"
+      }
+    },
+    {
+      "test_name": "custom_rule_cognitive_coherence",
+      "passed": true,
+      "execution_time": 2.6226043701171875e-06,
+      "details": {
+        "total_nodes": 5,
+        "nodes_with_semantics": 5,
+        "coherence_ratio": 1.0
+      }
+    },
+    {
+      "test_name": "custom_rule_energy_conservation",
+      "passed": true,
+      "execution_time": 4.100799560546875e-05,
+      "details": {
+        "total_energy": 0.0,
+        "energy_per_node": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite_energy": true
+      }
+    },
+    {
+      "test_name": "hypergraph_integrity",
+      "passed": true,
+      "execution_time": 6.699562072753906e-05,
+      "details": {
+        "unique_node_ids": true,
+        "valid_link_references": true,
+        "adjacency_matrix_size_correct": true,
+        "tensor_states_valid": true,
+        "semantic_content_consistent": true
+      }
+    },
+    {
+      "test_name": "tensor_hypergraph_correspondence",
+      "passed": false,
+      "execution_time": 2.0265579223632812e-05,
+      "details": {
+        "node_tensor_count_match": true,
+        "signature_shape_match": true,
+        "matrix_link_consistency": false
+      }
+    },
+    {
+      "test_name": "custom_rule_node_connectivity",
+      "passed": true,
+      "execution_time": 2.1457672119140625e-06,
+      "details": {
+        "average_connectivity": 0.75,
+        "total_links": 3,
+        "total_nodes": 4
+      }
+    },
+    {
+      "test_name": "custom_rule_numerical_stability",
+      "passed": true,
+      "execution_time": 9.393692016601562e-05,
+      "details": {
+        "reason": "numerically_stable"
+      }
+    },
+    {
+      "test_name": "custom_rule_cognitive_coherence",
+      "passed": true,
+      "execution_time": 2.6226043701171875e-06,
+      "details": {
+        "total_nodes": 4,
+        "nodes_with_semantics": 4,
+        "coherence_ratio": 1.0
+      }
+    },
+    {
+      "test_name": "custom_rule_energy_conservation",
+      "passed": true,
+      "execution_time": 3.552436828613281e-05,
+      "details": {
+        "total_energy": 0.0,
+        "energy_per_node": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite_energy": true
+      }
+    },
+    {
+      "test_name": "hypergraph_integrity",
+      "passed": true,
+      "execution_time": 7.82012939453125e-05,
+      "details": {
+        "unique_node_ids": true,
+        "valid_link_references": true,
+        "adjacency_matrix_size_correct": true,
+        "tensor_states_valid": true,
+        "semantic_content_consistent": true
+      }
+    },
+    {
+      "test_name": "tensor_hypergraph_correspondence",
+      "passed": false,
+      "execution_time": 2.3126602172851562e-05,
+      "details": {
+        "node_tensor_count_match": true,
+        "signature_shape_match": true,
+        "matrix_link_consistency": false
+      }
+    },
+    {
+      "test_name": "custom_rule_node_connectivity",
+      "passed": true,
+      "execution_time": 2.384185791015625e-06,
+      "details": {
+        "average_connectivity": 0.8,
+        "total_links": 4,
+        "total_nodes": 5
+      }
+    },
+    {
+      "test_name": "custom_rule_numerical_stability",
+      "passed": true,
+      "execution_time": 0.00011014938354492188,
+      "details": {
+        "reason": "numerically_stable"
+      }
+    },
+    {
+      "test_name": "custom_rule_cognitive_coherence",
+      "passed": true,
+      "execution_time": 2.6226043701171875e-06,
+      "details": {
+        "total_nodes": 5,
+        "nodes_with_semantics": 5,
+        "coherence_ratio": 1.0
+      }
+    },
+    {
+      "test_name": "custom_rule_energy_conservation",
+      "passed": true,
+      "execution_time": 4.482269287109375e-05,
+      "details": {
+        "total_energy": 0.0,
+        "energy_per_node": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite_energy": true
+      }
+    },
+    {
+      "test_name": "hypergraph_integrity",
+      "passed": true,
+      "execution_time": 5.364418029785156e-05,
+      "details": {
+        "unique_node_ids": true,
+        "valid_link_references": true,
+        "adjacency_matrix_size_correct": true,
+        "tensor_states_valid": true,
+        "semantic_content_consistent": true
+      }
+    },
+    {
+      "test_name": "tensor_hypergraph_correspondence",
+      "passed": false,
+      "execution_time": 1.6450881958007812e-05,
+      "details": {
+        "node_tensor_count_match": true,
+        "signature_shape_match": true,
+        "matrix_link_consistency": false
+      }
+    },
+    {
+      "test_name": "custom_rule_node_connectivity",
+      "passed": true,
+      "execution_time": 2.384185791015625e-06,
+      "details": {
+        "average_connectivity": 0.6666666666666666,
+        "total_links": 2,
+        "total_nodes": 3
+      }
+    },
+    {
+      "test_name": "custom_rule_numerical_stability",
+      "passed": true,
+      "execution_time": 7.2479248046875e-05,
+      "details": {
+        "reason": "numerically_stable"
+      }
+    },
+    {
+      "test_name": "custom_rule_cognitive_coherence",
+      "passed": true,
+      "execution_time": 1.9073486328125e-06,
+      "details": {
+        "total_nodes": 3,
+        "nodes_with_semantics": 3,
+        "coherence_ratio": 1.0
+      }
+    },
+    {
+      "test_name": "custom_rule_energy_conservation",
+      "passed": true,
+      "execution_time": 2.8133392333984375e-05,
+      "details": {
+        "total_energy": 0.0,
+        "energy_per_node": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite_energy": true
+      }
+    },
+    {
+      "test_name": "hypergraph_integrity",
+      "passed": true,
+      "execution_time": 7.700920104980469e-05,
+      "details": {
+        "unique_node_ids": true,
+        "valid_link_references": true,
+        "adjacency_matrix_size_correct": true,
+        "tensor_states_valid": true,
+        "semantic_content_consistent": true
+      }
+    },
+    {
+      "test_name": "tensor_hypergraph_correspondence",
+      "passed": false,
+      "execution_time": 2.288818359375e-05,
+      "details": {
+        "node_tensor_count_match": true,
+        "signature_shape_match": true,
+        "matrix_link_consistency": false
+      }
+    },
+    {
+      "test_name": "custom_rule_node_connectivity",
+      "passed": true,
+      "execution_time": 2.1457672119140625e-06,
+      "details": {
+        "average_connectivity": 0.8,
+        "total_links": 4,
+        "total_nodes": 5
+      }
+    },
+    {
+      "test_name": "custom_rule_numerical_stability",
+      "passed": true,
+      "execution_time": 0.00011181831359863281,
+      "details": {
+        "reason": "numerically_stable"
+      }
+    },
+    {
+      "test_name": "custom_rule_cognitive_coherence",
+      "passed": true,
+      "execution_time": 2.384185791015625e-06,
+      "details": {
+        "total_nodes": 5,
+        "nodes_with_semantics": 5,
+        "coherence_ratio": 1.0
+      }
+    },
+    {
+      "test_name": "custom_rule_energy_conservation",
+      "passed": true,
+      "execution_time": 3.886222839355469e-05,
+      "details": {
+        "total_energy": 0.0,
+        "energy_per_node": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite_energy": true
+      }
+    },
+    {
+      "test_name": "hypergraph_integrity",
+      "passed": true,
+      "execution_time": 7.605552673339844e-05,
+      "details": {
+        "unique_node_ids": true,
+        "valid_link_references": true,
+        "adjacency_matrix_size_correct": true,
+        "tensor_states_valid": true,
+        "semantic_content_consistent": true
+      }
+    },
+    {
+      "test_name": "tensor_hypergraph_correspondence",
+      "passed": false,
+      "execution_time": 2.2649765014648438e-05,
+      "details": {
+        "node_tensor_count_match": true,
+        "signature_shape_match": true,
+        "matrix_link_consistency": false
+      }
+    },
+    {
+      "test_name": "custom_rule_node_connectivity",
+      "passed": true,
+      "execution_time": 2.6226043701171875e-06,
+      "details": {
+        "average_connectivity": 0.8,
+        "total_links": 4,
+        "total_nodes": 5
+      }
+    },
+    {
+      "test_name": "custom_rule_numerical_stability",
+      "passed": true,
+      "execution_time": 0.00011324882507324219,
+      "details": {
+        "reason": "numerically_stable"
+      }
+    },
+    {
+      "test_name": "custom_rule_cognitive_coherence",
+      "passed": true,
+      "execution_time": 2.384185791015625e-06,
+      "details": {
+        "total_nodes": 5,
+        "nodes_with_semantics": 5,
+        "coherence_ratio": 1.0
+      }
+    },
+    {
+      "test_name": "custom_rule_energy_conservation",
+      "passed": true,
+      "execution_time": 3.9577484130859375e-05,
+      "details": {
+        "total_energy": 0.0,
+        "energy_per_node": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite_energy": true
+      }
+    }
+  ]
+}
