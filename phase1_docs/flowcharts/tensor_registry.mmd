@@ -1,0 +1,20 @@
+graph TD
+    subgraph TensorShapeRegistry
+        subgraph Complexity_13
+            COMP13_K0[cognitive_kernel_1\nShape: 5×32×64×16×8\nParams: 1310720]
+            COMP13_K1[cognitive_kernel_2\nShape: 7×32×64×16×8\nParams: 1835008]
+            COMP13_K2[cognitive_kernel_3\nShape: 3×32×64×16×8\nParams: 786432]
+        end
+    end
+    PRIMEMAPPER[Prime Factorization Mapper\nSemantic → Prime Mapping]
+    PRIMEMAPPER --> TensorShapeRegistry
+    OPTIMIZER[Shape Optimizer\nCompatibility Analysis]
+    TensorShapeRegistry --> OPTIMIZER
+    classDef kernelClass fill:#f1f8e9,stroke:#689f38,stroke-width:2px
+    classDef mapperClass fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    classDef optimizerClass fill:#e0f2f1,stroke:#00695c,stroke-width:2px
+    class COMP13_K0 kernelClass
+    class COMP13_K1 kernelClass
+    class COMP13_K2 kernelClass
+    class PRIMEMAPPER mapperClass
+    class OPTIMIZER optimizerClass

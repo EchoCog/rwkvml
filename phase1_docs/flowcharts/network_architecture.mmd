@@ -1,0 +1,21 @@
+graph TB
+    subgraph CognitiveGrammarNetwork
+        subgraph Fragments
+            FRAG0[Fragment 0\nNodes: 1\nID: 732260dc]
+            FRAG1[Fragment 1\nNodes: 1\nID: 02224941]
+            FRAG2[Fragment 2\nNodes: 1\nID: 38bb9995]
+        end
+        subgraph PatternLibrary
+            PATTERNS[Pattern Library\nPatterns: 6]
+        end
+    end
+    FRAG0 -.-> PATTERNS
+    FRAG1 -.-> PATTERNS
+    FRAG2 -.-> PATTERNS
+    classDef fragClass fill:#e8f5e8,stroke:#4caf50,stroke-width:2px
+    classDef patternClass fill:#fff8e1,stroke:#ff9800,stroke-width:2px
+    classDef atomClass fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
+    class FRAG0 fragClass
+    class FRAG1 fragClass
+    class FRAG2 fragClass
+    class PATTERNS patternClass

@@ -1,0 +1,209 @@
+{
+  "total_kernels": 3,
+  "kernels": {
+    "cognitive_kernel_1": {
+      "tensor_signature": {
+        "modality": 5,
+        "depth": 32,
+        "context": 64,
+        "salience": 16,
+        "autonomy_index": 8
+      },
+      "semantic_dimensions": {
+        "modality": 2,
+        "depth": 3,
+        "context": 4,
+        "salience": 2
+      },
+      "prime_factorization": {
+        "modality": [
+          5
+        ],
+        "depth": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "context": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "salience": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "autonomy_index": [
+          2,
+          2,
+          2
+        ]
+      },
+      "total_parameters": 1310720,
+      "complexity_score": 13.899999999999999,
+      "metadata": {
+        "creation_time": 1752451002.7779076,
+        "complexity_level": 11,
+        "example_id": 1
+      }
+    },
+    "cognitive_kernel_2": {
+      "tensor_signature": {
+        "modality": 7,
+        "depth": 32,
+        "context": 64,
+        "salience": 16,
+        "autonomy_index": 8
+      },
+      "semantic_dimensions": {
+        "modality": 3,
+        "depth": 5,
+        "context": 8,
+        "salience": 4
+      },
+      "prime_factorization": {
+        "modality": [
+          7
+        ],
+        "depth": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "context": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "salience": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "autonomy_index": [
+          2,
+          2,
+          2
+        ]
+      },
+      "total_parameters": 1835008,
+      "complexity_score": 13.899999999999999,
+      "metadata": {
+        "creation_time": 1752451002.777972,
+        "complexity_level": 20,
+        "example_id": 2
+      }
+    },
+    "cognitive_kernel_3": {
+      "tensor_signature": {
+        "modality": 3,
+        "depth": 32,
+        "context": 64,
+        "salience": 16,
+        "autonomy_index": 8
+      },
+      "semantic_dimensions": {
+        "modality": 1,
+        "depth": 7,
+        "context": 16,
+        "salience": 3
+      },
+      "prime_factorization": {
+        "modality": [
+          3
+        ],
+        "depth": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "context": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "salience": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "autonomy_index": [
+          2,
+          2,
+          2
+        ]
+      },
+      "total_parameters": 786432,
+      "complexity_score": 13.899999999999999,
+      "metadata": {
+        "creation_time": 1752451002.778022,
+        "complexity_level": 27,
+        "example_id": 3
+      }
+    }
+  },
+  "relationships": {
+    "cognitive_kernel_1": [],
+    "cognitive_kernel_2": [],
+    "cognitive_kernel_3": []
+  },
+  "statistics": {
+    "cognitive_kernel_1": {
+      "registration_count": 1,
+      "access_count": 0,
+      "last_accessed": null
+    },
+    "cognitive_kernel_2": {
+      "registration_count": 1,
+      "access_count": 0,
+      "last_accessed": null
+    },
+    "cognitive_kernel_3": {
+      "registration_count": 1,
+      "access_count": 0,
+      "last_accessed": null
+    }
+  },
+  "optimization_opportunities": {
+    "cognitive_kernel_1": [
+      {
+        "type": "complexity_reduction",
+        "message": "Consider reducing tensor complexity",
+        "current_complexity": 13.899999999999999
+      }
+    ],
+    "cognitive_kernel_2": [
+      {
+        "type": "complexity_reduction",
+        "message": "Consider reducing tensor complexity",
+        "current_complexity": 13.899999999999999
+      }
+    ],
+    "cognitive_kernel_3": [
+      {
+        "type": "complexity_reduction",
+        "message": "Consider reducing tensor complexity",
+        "current_complexity": 13.899999999999999
+      }
+    ]
+  }
+}
